@@ -21,25 +21,34 @@ public class PrimeFactorization {
         Scanner keyedInput = new Scanner(System.in);
         
         int choice = 0;
-        int knowledge = 0;
         int score = 0;
         
         
-        System.out.println(" Do you know what Prime Factorization is? ");
+       
+        while ( choice != 4 )
+        {
+            System.out.println(" Prime Factorization Quiz. ");
             System.out.println("");
-           
-            System.out.println("1 → Yes.");
-            System.out.println("2 → No.");
-            knowledge = keyedInput.nextInt();
             
-            if (knowledge == 1)
-            {
-                System.out.println("-------------------------------------------------------------------------------------------------");
-                System.out.println("");
-                System.out.println("");
-            }
             
-            if (knowledge == 2)
+            
+            
+            
+            
+            System.out.println("Prease enter your choice.");
+            System.out.println("");
+            System.out.println("1 → Find the value of a number squared (Ex: 2*2 = 2 x 2)");
+            System.out.println("2 → Find the value of a number cubed (Ex: 2*3 = 2 x 2 x 2)");
+            System.out.println("3 → Find the value of a number, to any power");
+            System.out.println("4 → What is Prime Factorization?");
+            System.out.println("5 → Exit");
+            System.out.println("Prease enter your choice.");
+        
+            choice = keyedInput.nextInt();
+            
+            
+            
+            if (choice == 4)
             {
                 System.out.println(" -------- Prime Factorization --------");
                 System.out.println("");
@@ -66,29 +75,12 @@ public class PrimeFactorization {
                 System.out.println("");
                 System.out.println("");
             }
-            
-            
-            
-        while ( choice != 4 )
-        {
-            System.out.println(" Prime Factorization Quiz. ");
-            System.out.println("");
-            
-            
-            
-            
-            
-            
-            System.out.println("Prease enter your choice.");
-            System.out.println("");
-            System.out.println("1 → Find the value of a number squared (Ex: 2*2 = 2 x 2)");
-            System.out.println("2 → Find the value of a number cubed (Ex: 2*3 = 2 x 2 x 2)");
-            System.out.println("3 → Find the value of a number, to any power");
-            System.out.println("4 → Exit");
-            System.out.println("Prease enter your choice.");
         
-            choice = keyedInput.nextInt();
-        
+            
+            if (choice == 5)
+            {
+                System.out.println("");
+            }
     }
     
 }

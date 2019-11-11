@@ -6,6 +6,9 @@
 
 package primefactorization;
 
+import java.util.Random;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -37,13 +40,14 @@ public class PrimeFactorization {
             
             System.out.println("Prease enter your choice.");
             System.out.println("");
-            System.out.println("1 → ");
-            System.out.println("2 → ");
-            System.out.println("3 → ");
-            System.out.println("4 → What is Prime Factorization?");
-            System.out.println("5 → Exit");
+            System.out.println("1 → Level 1 : Do Prime Factorization by 1 degits. Ex: 4, 6, 8");
+            System.out.println("2 → Level 2 : Do Prime Factorization by 2 degits. Ex: 10, 45, 78");
+            System.out.println("3 → Level 3 : Do Prime Factorization by 3 degits. Ex: 100, 120, 526");
+            System.out.println("4 → Level 4 : Do Prime Factorization by 4 degits. Ex: 1000, 1111, 2520");
+            System.out.println("5 → What is Prime Factorization?");
+            System.out.println("6 → Exit");
             System.out.println("");
-            System.out.println("Prease enter your choice.");
+            System.out.println("Prease enter your choice ↓");
         
             choice = keyedInput.nextInt();
             
@@ -51,17 +55,56 @@ public class PrimeFactorization {
             
             if (choice == 1)
             {
+                System.out.println("Welcome to Level 1!!");
+                System.out.println("Note: Please not use Calculator or Google or others to help you to answer those Questions.");
+                System.out.println("4 Questions are picking up by random. You have to answer those.");
+                System.out.println("");
+                System.out.println("The ways to answer → If Quesion is Do Prime Factiorization of 10, The answer is 2x5 so you enter 2 and press enter key then 5. Those number hold it by arrays.");
+                
+                int Que1 [] = new int [3];
+                Que1[0] = 4;
+                Que1[1] = 6;
+                Que1[2] = 8;
+                Que1[3] = 9;
+                
+                
+                
+                System.out.println("Question1: "+ Free +"");
+                System.out.println("Question1: "+ Free +"");
+                System.out.println("Question1: "+ Free +"");
+                System.out.println("Question1: "+ Free +"");
+                
+            }
             
+            
+            if (choice == 2)
+            {
+                System.out.println("Welcome to Level 2!!");
+                System.out.println("Note: Please not use Calculator or Google or others to help you to answer those Questions.");
+                
+            }
+            
+            
+            
+            if (choice == 3)
+            {
+                System.out.println("Welcome to Level 3!!");
+                System.out.println("Note: Please not use Calculator or Google or others to help you to answer those Questions.");
+                
+            }
+            
+            
+            if (choice == 4)
+            {
+                System.out.println("Welcome to Level 4!!");
+                System.out.println("Note: Please not use Calculator or Google or others to help you to answer those Questions.");
+                
             }
             
             
             
             
-            
-            
-            
-            
-            if (choice == 4)
+            if (choice == 5)
             {
                 System.out.println(" -------- Prime Factorization --------");
                 System.out.println("");
@@ -90,11 +133,38 @@ public class PrimeFactorization {
             }
         
             
-            if (choice == 5)
+            if (choice == 6)
             {
                 System.out.println("");
             }
     }
-    
+           
 }
 }
+
+  class Free {
+  public void main(String[] args) {
+    // create a list of Integer type 
+        List<Integer> list = new ArrayList<>(); 
+        // add 5 element in ArrayList 
+        list.add(4); 
+        list.add(6); 
+        list.add(8); 
+        list.add(9); 
+        
+  
+        Free obj = new Free(); 
+  
+        // take a random element from list and print them 
+        System.out.println(obj.getRandomElement(list));
+
+    } 
+  
+    // Function select an element base on index  
+    // and return an element 
+    public int getRandomElement(List<Integer> list) 
+    { 
+        Random rand = new Random(); 
+        return list.get(rand.nextInt(list.size())); 
+    } 
+} 

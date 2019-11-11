@@ -59,7 +59,7 @@ public class PrimeFactorization {
                 System.out.println("Note: Please not use Calculator or Google or others to help you to answer those Questions.");
                 System.out.println("4 Questions are picking up by random. You have to answer those.");
                 System.out.println("");
-                System.out.println("The ways to answer → If Quesion is Do Prime Factiorization of 10, The answer is 2x5 so you enter 2 and press enter key then 5. Those number hold it by arrays.");
+                System.out.println("The ways to answer → If Quesion is Do Prime Factiorization of 10, The answer is 2x5 so you enter "+25+". Don't write it as "+52+" always start with small number.");
                 
                 int Que1 [] = new int [3];
                 Que1[0] = 4;
@@ -67,13 +67,20 @@ public class PrimeFactorization {
                 Que1[2] = 8;
                 Que1[3] = 9;
                 
+                int Ans1 [] = new int [3];
+                Ans1[0] = 22;
+                Ans1[1] = 23;
+                Ans1[2] = 222;
+                Ans1[3] = 33;
+                    
                 
-                
-                System.out.println("Question1: "+ Free +"");
-                System.out.println("Question1: "+ Free +"");
-                System.out.println("Question1: "+ Free +"");
-                System.out.println("Question1: "+ Free +"");
-                
+                for (i = 0; i <= 4; i ++)
+                {
+                    System.out.println("Question "+i + 1+" → "); 
+                    
+                    
+                }
+               
             }
             
             

@@ -37,14 +37,27 @@ public class PrimeFactorization {
             
             System.out.println("Prease enter your choice.");
             System.out.println("");
-            System.out.println("1 → Find the value of a number squared (Ex: 2*2 = 2 x 2)");
-            System.out.println("2 → Find the value of a number cubed (Ex: 2*3 = 2 x 2 x 2)");
-            System.out.println("3 → Find the value of a number, to any power");
+            System.out.println("1 → ");
+            System.out.println("2 → ");
+            System.out.println("3 → ");
             System.out.println("4 → What is Prime Factorization?");
             System.out.println("5 → Exit");
+            System.out.println("");
             System.out.println("Prease enter your choice.");
         
             choice = keyedInput.nextInt();
+            
+            
+            
+            if (choice == 1)
+            {
+            
+            }
+            
+            
+            
+            
+            
             
             
             

@@ -97,7 +97,70 @@ public class PrimeFactorization {
                 }
 
                 
+                System.out.println("Question 2: 6");
+                ans = keyedInput.nextInt();
                 
+                if(ans == 23)
+                {
+                    System.out.println("");
+                    System.out.println("Correct");
+                    
+                    score = score + 1;
+                    System.out.println("Your score right now: "+score+"");
+                }
+                    
+                else
+                {
+                    System.out.println("");
+                    System.out.println("Incorrect");
+                    
+                    score = score - 1;
+                    System.out.println("Your score right now: "+score+"");
+                }
+
+                
+                System.out.println("Question 3: 8");
+                ans = keyedInput.nextInt();
+                
+                if(ans == 222)
+                {
+                    System.out.println("");
+                    System.out.println("Correct");
+                    
+                    score = score + 1;
+                    System.out.println("Your score right now: "+score+"");
+                }
+                    
+                else
+                {
+                    System.out.println("");
+                    System.out.println("Incorrect");
+                    
+                    score = score - 1;
+                    System.out.println("Your score right now: "+score+"");
+                }
+                
+                
+                System.out.println("Question 4: 9");
+                ans = keyedInput.nextInt();
+                
+                if(ans == 23)
+                {
+                    System.out.println("");
+                    System.out.println("Correct");
+                    
+                    score = score + 1;
+                    System.out.println("Your score right now: "+score+"");
+                }
+                    
+                else
+                {
+                    System.out.println("");
+                    System.out.println("Incorrect");
+                    
+                    score = score - 1;
+                    System.out.println("Your score right now: "+score+"");
+                }
             }
             
             

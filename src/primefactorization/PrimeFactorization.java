@@ -25,10 +25,11 @@ public class PrimeFactorization {
         
         int choice = 0;
         int score = 0;
-        
+        int ans = 0;
+        int score = 0;
         
        
-        while ( choice != 4 )
+        while ( choice != 6 )
         {
             System.out.println(" Prime Factorization Quiz. ");
             System.out.println("");
@@ -57,7 +58,7 @@ public class PrimeFactorization {
             {
                 System.out.println("Welcome to Level 1!!");
                 System.out.println("Note: Please not use Calculator or Google or others to help you to answer those Questions.");
-                System.out.println("4 Questions are picking up by random. You have to answer those.");
+                System.out.println("4 Questions are provide for you. You have to answer those.");
                 System.out.println("");
                 System.out.println("The ways to answer → If Quesion is Do Prime Factiorization of 10, The answer is 2x5 so you enter "+25+". Don't write it as "+52+" always start with small number.");
                 
@@ -74,13 +75,29 @@ public class PrimeFactorization {
                 Ans1[3] = 33;
                     
                 
-                for (i = 0; i <= 4; i ++)
+                System.out.println("Question 1: 4");
+                ans = keyedInput.nextInt();
+                
+                if (ans == 22)
                 {
-                    System.out.println("Question "+i + 1+" → "); 
+                    System.out.println("");
+                    System.out.println("Correct");
                     
-                    
+                    score = score + 1;
+                    System.out.println("Your score right now: "+score+"");
                 }
-               
+                
+                else 
+                {
+                    System.out.println("");
+                    System.out.println("Incorrect");
+                    
+                    score = score - 1;
+                    System.out.println("Your score right now: "+score+"");
+                }
+
+                
+                
             }
             
             

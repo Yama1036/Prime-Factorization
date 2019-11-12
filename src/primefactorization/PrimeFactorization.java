@@ -21,11 +21,54 @@ public class PrimeFactorization {
      * @param args the command line arguments
      * 
      */
-    public static void score (int n1, int n2) {
+    public static void score (int n1, int n2, int n3) {
+        // n1 = # of correct
+        // n2 = # of incorrect
+        // n3 = # of Questions.
         int score = 0;
+        score = n1;
+        
+        double per = n1 / n3
+        per = per * 100;
+        per = Math.round(per);
+        
+        System.out.println("Your Percentage is → "+per+"%");
         
         
+        if (per == 100)
+        {
+            System.out.println("");
+            System.out.println("Perfect !!");
+            System.out.println("");
+        }    
         
+        else if (per <= 99 && per >= 80)
+        {
+            System.out.println("");
+            System.out.println("Well done !!");
+            System.out.println("");
+        }
+        
+        else if (per < 80 && per > 50)
+        {
+            System.out.println("");
+            System.out.println("Nice try !!");
+            System.out.println("");
+        }    
+        
+        else if (per < 50 && per > 0)
+        {
+            System.out.println("");
+            System.out.println("Try it again !!");
+            System.out.println("");
+        }
+        
+        else if (per == 0 ) 
+        {
+            System.out.println("");
+            System.out.println("Do you know what Prime Factorization is?");
+            System.out.println("");
+        }    
     }
     
     
@@ -73,7 +116,7 @@ public class PrimeFactorization {
             if (choice == 1)
             {
                 System.out.println("Welcome to Level 1!!");
-                System.out.println("Note: Please not use Calculator or Google or others to help you to answer those Questions.");
+                System.out.println("Note: Please do not use Calculator or Google or others to help you to answer those Questions.");
                 System.out.println("4 Questions are provide for you. You have to answer those.");
                 System.out.println("");
                 System.out.println("The ways to answer → If Quesion is Do Prime Factiorization of 10, The answer is 2x5 so you enter "+25+". Don't write it as "+52+" always start with small number.");
@@ -103,6 +146,8 @@ public class PrimeFactorization {
                     System.out.println("Your score right now: "+score+"");
                     System.out.println("");
                     System.out.println("");
+                    correct = correct + 1;
+                    incorrect = incorrect + 0;
                 }
                 
                 else 
@@ -114,6 +159,8 @@ public class PrimeFactorization {
                     System.out.println("Your score right now: "+score+"");
                     System.out.println("");
                     System.out.println("");
+                    correct = correct + 0;
+                    incorrect = incorrect + 1;
                 }
 
                 
@@ -129,6 +176,8 @@ public class PrimeFactorization {
                     System.out.println("Your score right now: "+score+"");
                     System.out.println("");
                     System.out.println("");
+                    correct = correct + 1;
+                    incorrect = incorrect + 0;
                 }
                     
                 else
@@ -140,6 +189,8 @@ public class PrimeFactorization {
                     System.out.println("Your score right now: "+score+"");
                     System.out.println("");
                     System.out.println("");
+                    correct = correct + 0;
+                    incorrect = incorrect + 1;
                 }
 
                 
@@ -155,6 +206,8 @@ public class PrimeFactorization {
                     System.out.println("Your score right now: "+score+"");
                     System.out.println("");
                     System.out.println("");
+                    correct = correct + 1;
+                    incorrect = incorrect + 0;
                 }
                     
                 else
@@ -166,6 +219,8 @@ public class PrimeFactorization {
                     System.out.println("Your score right now: "+score+"");
                     System.out.println("");
                     System.out.println("");
+                    correct = correct + 0;
+                    incorrect = incorrect + 1;
                 }
                 
                 
@@ -181,6 +236,8 @@ public class PrimeFactorization {
                     System.out.println("Your score right now: "+score+"");
                     System.out.println("");
                     System.out.println("");
+                    correct = correct + 1;
+                    incorrect = incorrect + 0;
                 }
                     
                 else
@@ -192,6 +249,8 @@ public class PrimeFactorization {
                     System.out.println("Your score right now: "+score+"");
                     System.out.println("");
                     System.out.println("");
+                    correct = correct + 0;
+                    incorrect = incorrect + 1;
                     
                 }
                 
@@ -203,7 +262,7 @@ public class PrimeFactorization {
             if (choice == 2)
             {
                 System.out.println("Welcome to Level 2!!");
-                System.out.println("Note: Please not use Calculator or Google or others to help you to answer those Questions.");
+                System.out.println("Note: Please do not use Calculator or Google or others to help you to answer those Questions.");
                 
                 
                 
@@ -217,7 +276,7 @@ public class PrimeFactorization {
             if (choice == 3)
             {
                 System.out.println("Welcome to Level 3!!");
-                System.out.println("Note: Please not use Calculator or Google or others to help you to answer those Questions.");
+                System.out.println("Note: Please do not use Calculator or Google or others to help you to answer those Questions.");
                 
             }
             
@@ -225,7 +284,7 @@ public class PrimeFactorization {
             if (choice == 4)
             {
                 System.out.println("Welcome to Level 4!!");
-                System.out.println("Note: Please not use Calculator or Google or others to help you to answer those Questions.");
+                System.out.println("Note: Please do not use Calculator or Google or others to help you to answer those Questions.");
                 
             }
             

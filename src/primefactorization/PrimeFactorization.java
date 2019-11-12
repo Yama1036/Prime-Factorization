@@ -254,7 +254,7 @@ public class PrimeFactorization {
                     
                 }
                 
-                
+                System.out.println("----------------------------------------------------------------------------");
                 
             }
             
@@ -263,13 +263,163 @@ public class PrimeFactorization {
             {
                 System.out.println("Welcome to Level 2!!");
                 System.out.println("Note: Please do not use Calculator or Google or others to help you to answer those Questions.");
+                System.out.println("10 Questions are provide for you. You have to answer those.");
+                System.out.println("");
+                System.out.println("The ways to answer → If Quesion is Do Prime Factiorization of 10, The answer is 2x5 so you enter "+25+". Don't write it as "+52+" always start with small number.");
                 
                 
+                int Que2 [] = new int [10];
+                Que2[0] = 10;
+                Que2[1] = 25;
+                Que2[2] = 12;
+                Que2[3] = ;
+                Que2[4] = ;
+                Que2[5] = ;
+                Que2[6] = ;
+                Que2[7] = ;
+                Que2[8] = ;
+                Que2[9] = ;
+                
+                int Ans2 [] = new int [10];
+                Ans2[0] = 25;
+                Ans2[1] = 55;
+                Ans2[2] = 223;
+                Ans2[3] = ;
+                Ans2[4] = ;
+                Ans2[5] = ;
+                Ans2[6] = ;
+                Ans2[7] = ;
+                Ans2[8] = ;
+                Ans2[9] = ;
+                    
+                
+                System.out.println("Question 1: 4");
+                ans = keyedInput.nextInt();
+                
+                if (ans == Ans2[0])
+                {
+                    System.out.println("");
+                    System.out.println("Correct");
+                    
+                    score = score + 1;
+                    System.out.println("Your score right now: "+score+"");
+                    System.out.println("");
+                    System.out.println("");
+                    correct = correct + 1;
+                    incorrect = incorrect + 0;
+                }
+                
+                else 
+                {
+                    System.out.println("");
+                    System.out.println("Incorrect");
+                    
+                    score = score - 1;
+                    System.out.println("Your score right now: "+score+"");
+                    System.out.println("");
+                    System.out.println("");
+                    correct = correct + 0;
+                    incorrect = incorrect + 1;
+                }
+
+                
+                System.out.println("Question 2: 6");
+                ans = keyedInput.nextInt();
+                
+                if(ans == Ans2[1])
+                {
+                    System.out.println("");
+                    System.out.println("Correct");
+                    
+                    score = score + 1;
+                    System.out.println("Your score right now: "+score+"");
+                    System.out.println("");
+                    System.out.println("");
+                    correct = correct + 1;
+                    incorrect = incorrect + 0;
+                }
+                    
+                else
+                {
+                    System.out.println("");
+                    System.out.println("Incorrect");
+                    
+                    score = score - 1;
+                    System.out.println("Your score right now: "+score+"");
+                    System.out.println("");
+                    System.out.println("");
+                    correct = correct + 0;
+                    incorrect = incorrect + 1;
+                }
+
+                
+                System.out.println("Question 3: 8");
+                ans = keyedInput.nextInt();
+                
+                if(ans == Ans2[2])
+                {
+                    System.out.println("");
+                    System.out.println("Correct");
+                    
+                    score = score + 1;
+                    System.out.println("Your score right now: "+score+"");
+                    System.out.println("");
+                    System.out.println("");
+                    correct = correct + 1;
+                    incorrect = incorrect + 0;
+                }
+                    
+                else
+                {
+                    System.out.println("");
+                    System.out.println("Incorrect");
+                    
+                    score = score - 1;
+                    System.out.println("Your score right now: "+score+"");
+                    System.out.println("");
+                    System.out.println("");
+                    correct = correct + 0;
+                    incorrect = incorrect + 1;
+                }
                 
                 
+                System.out.println("Question 4: 9");
+                ans = keyedInput.nextInt();
                 
+                if(ans == Ans2[3])
+                {
+                    System.out.println("");
+                    System.out.println("Correct");
+                    
+                    score = score + 1;
+                    System.out.println("Your score right now: "+score+"");
+                    System.out.println("");
+                    System.out.println("");
+                    correct = correct + 1;
+                    incorrect = incorrect + 0;
+                }
+                    
+                else
+                {
+                    System.out.println("");
+                    System.out.println("Incorrect");
+                    
+                    score = score - 1;
+                    System.out.println("Your score right now: "+score+"");
+                    System.out.println("");
+                    System.out.println("");
+                    correct = correct + 0;
+                    incorrect = incorrect + 1;
+                    
+                }
+                
+                System.out.println("----------------------------------------------------------------------------");
                 
             }
+                
+                
+                
+           
             
             
             

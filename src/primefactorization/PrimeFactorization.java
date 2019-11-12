@@ -169,6 +169,10 @@ public class PrimeFactorization {
                 System.out.println("Welcome to Level 2!!");
                 System.out.println("Note: Please not use Calculator or Google or others to help you to answer those Questions.");
                 
+                
+                
+                
+                
             }
             
             
@@ -229,29 +233,27 @@ public class PrimeFactorization {
 }
 }
 
-  class Free {
-  public void main(String[] args) {
-    // create a list of Integer type 
-        List<Integer> list = new ArrayList<>(); 
-        // add 5 element in ArrayList 
-        list.add(4); 
-        list.add(6); 
-        list.add(8); 
-        list.add(9); 
-        
-  
-        Free obj = new Free(); 
-  
-        // take a random element from list and print them 
-        System.out.println(obj.getRandomElement(list));
+     public static void Answer(String[] args) {
+        System.out.println("What number does Question asking you to do Prime Factorizaton?")
+        int Question = keyedInput.nextInt();
 
-    } 
-  
-    // Function select an element base on index  
-    // and return an element 
-    public int getRandomElement(List<Integer> list) 
-    { 
-        Random rand = new Random(); 
-        return list.get(rand.nextInt(list.size())); 
-    } 
-} 
+        System.out.print(Question+"=");
+
+        for (int i = 2;i<=Question;i++) {
+
+        if (Question % i == 0) {
+
+        Question /= i;
+
+        if (Question == 1) 
+        System.out.print(i);
+
+        else System.out.print(i + "×");
+
+        i = 1;
+
+}
+
+}
+
+}

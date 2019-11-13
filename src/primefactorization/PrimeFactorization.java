@@ -26,7 +26,7 @@ public class PrimeFactorization {
         // n2 = # of incorrect
         // n3 = # of Questions.
         
-        double per = n1 / n3
+        double per = n1 / n3;
         per = per * 100;
         per = Math.round(per);
         
@@ -70,50 +70,66 @@ public class PrimeFactorization {
     }
     
     
-        public static void answer (int num1, int num2) {
+        public static void answer (int num1, int num2, int num3) {
             //num1 = answer that correct.
             //num2 = answer that user input.
+            //num3 = score.
             int Correct;
             int Incorrect;
             int score;
-           
+            int correct;
+            int incorrect;
+            int current;
+            
+            int a = 0;
+            int b = 0;
+            int c = 0;
+            
+            
+            current = num3;
+            
+            c = current;
+            
+            
             
             if (num1 == num2)
             {
                 System.out.println("");
                 System.out.println("Correct");
                     
-                score = score + 1;
+                score = c + 1;
                 System.out.println("Your score right now: "+score+"");
                 System.out.println("");
                 System.out.println("");
-                Correct = Correct + 1;
-                Incorrect = Incorrect + 0;
+                Correct = a + 1;
+                Incorrect = b + 0;
                 
-                return;
-                Correct;
-                Incorrect;
-                score;
+                a = Correct;
+                b = Incorrect;
+                
             }
-    
+            
+            
             
             else
             {
                 System.out.println("");
                 System.out.println("Incorrect");
                     
-                score = score - 1;
+                score = c - 1;
                 System.out.println("Your score right now: "+score+"");
                 System.out.println("");
                 System.out.println("");
-                Correct = Correct + 0;
-                Incorrect = Incorrect + 1;
+                Correct = a + 0;
+                Incorrect = b + 1;
                 
-                return;
-                Correct;
-                Incorrect;
-                score;
+                a = Correct;
+                b = Incorrect;
+                
             }
+            
+            
+        }
                 
             
     
@@ -128,6 +144,7 @@ public class PrimeFactorization {
         double Per;
         int correct = 0;
         int incorrect = 0;
+        int current = 0;
         
        
         while ( choice != 6 )
@@ -319,11 +336,11 @@ public class PrimeFactorization {
                 Que2[2] = 12;
                 Que2[3] = 72;
                 Que2[4] = 32;
-                Que2[5] = ;
-                Que2[6] = ;
-                Que2[7] = ;
-                Que2[8] = ;
-                Que2[9] = ;
+                Que2[5] = 16;
+                Que2[6] = 99;
+                Que2[7] = 27;
+                Que2[8] = 80;
+                Que2[9] = 34;
                 
                 int Ans2 [] = new int [10];
                 Ans2[0] = 25;
@@ -331,14 +348,14 @@ public class PrimeFactorization {
                 Ans2[2] = 223;
                 Ans2[3] = 22233;
                 Ans2[4] = 22222;
-                Ans2[5] = ;
-                Ans2[6] = ;
-                Ans2[7] = ;
-                Ans2[8] = ;
-                Ans2[9] = ;
+                Ans2[5] = 2222;
+                Ans2[6] = 3311;
+                Ans2[7] = 333;
+                Ans2[8] = 22225;
+                Ans2[9] = 217;
                     
                 
-                System.out.println("Question 1: 4");
+                System.out.println("Question 1: 10");
                 ans = keyedInput.nextInt();
                 
                 if (ans == Ans2[0])
@@ -368,7 +385,7 @@ public class PrimeFactorization {
                 }
 
                 
-                System.out.println("Question 2: 6");
+                System.out.println("Question 2: 25");
                 ans = keyedInput.nextInt();
                 
                 if(ans == Ans2[1])
@@ -398,7 +415,7 @@ public class PrimeFactorization {
                 }
 
                 
-                System.out.println("Question 3: 8");
+                System.out.println("Question 3: 12");
                 ans = keyedInput.nextInt();
                 
                 if(ans == Ans2[2])
@@ -428,7 +445,7 @@ public class PrimeFactorization {
                 }
                 
                 
-                System.out.println("Question 4: 9");
+                System.out.println("Question 4: 72");
                 ans = keyedInput.nextInt();
                 
                 if(ans == Ans2[3])
@@ -477,14 +494,15 @@ public class PrimeFactorization {
                 System.out.println("Question1: 100");
                 ans = keyedInput.nextInt();
                 
-                answer(2255,ans);
+                answer(2255,ans,current);
                 
                 System.out.println("");
                 System.out.println("");
                 System.out.println("Question2: 121");
                 ans = keyedInput.nextInt();
                 
-                answer(1111,ans);
+                
+                answer(1111,ans,current);
                 
                 System.out.println("");
                 System.out.println("");
@@ -492,9 +510,9 @@ public class PrimeFactorization {
                 System.out.println("");
                 ans = keyedInput.nextInt();
                 
-                answer(3557,ans);
+                answer(3557,ans,current);
                 
-                Score(Correct,Incorrect,3);
+                Score(correct,incorrect,3);
                 
                 
                 

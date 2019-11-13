@@ -21,12 +21,10 @@ public class PrimeFactorization {
      * @param args the command line arguments
      * 
      */
-    public static void score (int n1, int n2, int n3) {
+    public static void Score (int n1, int n2, int n3) {
         // n1 = # of correct
         // n2 = # of incorrect
         // n3 = # of Questions.
-        int score = 0;
-        score = n1;
         
         double per = n1 / n3
         per = per * 100;
@@ -72,8 +70,52 @@ public class PrimeFactorization {
     }
     
     
+        public static void answer (int num1, int num2) {
+            //num1 = answer that correct.
+            //num2 = answer that user input.
+            int Correct;
+            int Incorrect;
+            int score;
+           
+            
+            if (num1 == num2)
+            {
+                System.out.println("");
+                System.out.println("Correct");
+                    
+                score = score + 1;
+                System.out.println("Your score right now: "+score+"");
+                System.out.println("");
+                System.out.println("");
+                Correct = Correct + 1;
+                Incorrect = Incorrect + 0;
+                
+                return;
+                Correct;
+                Incorrect;
+                score;
+            }
     
-    
+            
+            else
+            {
+                System.out.println("");
+                System.out.println("Incorrect");
+                    
+                score = score - 1;
+                System.out.println("Your score right now: "+score+"");
+                System.out.println("");
+                System.out.println("");
+                Correct = Correct + 0;
+                Incorrect = Incorrect + 1;
+                
+                return;
+                Correct;
+                Incorrect;
+                score;
+            }
+                
+            
     
     
     
@@ -254,6 +296,9 @@ public class PrimeFactorization {
                     
                 }
                 
+                Score(correct, incorrect, 4);
+                
+                
                 System.out.println("----------------------------------------------------------------------------");
                 
             }
@@ -272,8 +317,8 @@ public class PrimeFactorization {
                 Que2[0] = 10;
                 Que2[1] = 25;
                 Que2[2] = 12;
-                Que2[3] = ;
-                Que2[4] = ;
+                Que2[3] = 72;
+                Que2[4] = 32;
                 Que2[5] = ;
                 Que2[6] = ;
                 Que2[7] = ;
@@ -284,8 +329,8 @@ public class PrimeFactorization {
                 Ans2[0] = 25;
                 Ans2[1] = 55;
                 Ans2[2] = 223;
-                Ans2[3] = ;
-                Ans2[4] = ;
+                Ans2[3] = 22233;
+                Ans2[4] = 22222;
                 Ans2[5] = ;
                 Ans2[6] = ;
                 Ans2[7] = ;
@@ -427,6 +472,32 @@ public class PrimeFactorization {
             {
                 System.out.println("Welcome to Level 3!!");
                 System.out.println("Note: Please do not use Calculator or Google or others to help you to answer those Questions.");
+                System.out.println("");
+                System.out.println("");
+                System.out.println("Question1: 100");
+                ans = keyedInput.nextInt();
+                
+                answer(2255,ans);
+                
+                System.out.println("");
+                System.out.println("");
+                System.out.println("Question2: 121");
+                ans = keyedInput.nextInt();
+                
+                answer(1111,ans);
+                
+                System.out.println("");
+                System.out.println("");
+                System.out.println("Question3: 525");
+                System.out.println("");
+                ans = keyedInput.nextInt();
+                
+                answer(3557,ans);
+                
+                Score(Correct,Incorrect,3);
+                
+                
+                
                 
             }
             

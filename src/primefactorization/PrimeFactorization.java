@@ -80,7 +80,7 @@ public class PrimeFactorization {
             int correct = num4;
             int incorrect = num5;
             
-            
+            //what happen if I put loop to score ++
             
             if (num1 == num2)
             {

@@ -76,9 +76,9 @@ public class PrimeFactorization {
             //num3 = score.
             //num4 = # of correct answer that user get.
             //num5 = # of incorrect answer that user get.
-            int score;
-            int correct;
-            int incorrect;
+            int score = num3;
+            int correct = num4;
+            int incorrect = num5;
             
             
             
@@ -86,14 +86,19 @@ public class PrimeFactorization {
             {
                 System.out.println("");
                 System.out.println("Correct");
-                    
-                score = num3 + 1;
+                
+                score = score + 1;
                 System.out.println("Your score right now: "+score+"");
                 System.out.println("");
                 System.out.println("");
-                correct = num4 + 1;
-                incorrect = num5 + 0;
                 
+                if (correct >= 1)
+                {
+                    correct = correct + 1;
+                    incorrect = incorrect + 0;
+                }
+                
+               
             }
             
             
@@ -107,12 +112,17 @@ public class PrimeFactorization {
                 System.out.println("Your score right now: "+score+"");
                 System.out.println("");
                 System.out.println("");
-                correct = num4 + 0;
-                incorrect = num5 + 1;
+                
+                if (correct >= 1)
+                {
+                    correct = num4 + 0;
+                    incorrect = num5 + 1;
+                }
+                
                 
             }
-            
         }
+
                 
             
     
@@ -130,7 +140,7 @@ public class PrimeFactorization {
         int current = 0;
         
        
-        while ( choice != 6 )
+        while ( choice != 5 )
         {
             System.out.println(" Prime Factorization Quiz. ");
             System.out.println("");
@@ -145,9 +155,8 @@ public class PrimeFactorization {
             System.out.println("1 → Level 1 : Do Prime Factorization by 1 degits. Ex: 4, 6, 8");
             System.out.println("2 → Level 2 : Do Prime Factorization by 2 degits. Ex: 10, 45, 78");
             System.out.println("3 → Level 3 : Do Prime Factorization by 3 degits. Ex: 100, 120, 526");
-            System.out.println("4 → Level 4 : Do Prime Factorization by 4 degits. Ex: 1000, 1111, 2520");
-            System.out.println("5 → What is Prime Factorization?");
-            System.out.println("6 → Exit");
+            System.out.println("4 → What is Prime Factorization?");
+            System.out.println("5 → Exit");
             System.out.println("");
             System.out.println("Prease enter your choice ↓");
         
@@ -458,6 +467,8 @@ public class PrimeFactorization {
                     
                 }
                 
+                Score(correct, incorrect, 3);
+                
                 System.out.println("----------------------------------------------------------------------------");
                 
             }
@@ -518,7 +529,12 @@ public class PrimeFactorization {
                 System.out.println("");
                 ans = keyedInput.nextInt();
                 
-                answer(3557, ans, score, correct, incorrect);
+                answer( 3557, ans, score, correct, incorrect);
+                
+                                    //↑↑↑ score, correct,and incorrect counter don't increase. Why?
+                
+                System.out.println("Correct Answer →"+correct+"");
+                System.out.println("incorrect Answer →"+incorrect+"");
                 
                 Score(correct,incorrect,3);
                 
@@ -529,16 +545,6 @@ public class PrimeFactorization {
             
             
             if (choice == 4)
-            {
-                System.out.println("Welcome to Level 4!!");
-                System.out.println("Note: Please do not use Calculator or Google or others to help you to answer those Questions.");
-                
-            }
-            
-            
-            
-            
-            if (choice == 5)
             {
                 System.out.println(" -------- Prime Factorization --------");
                 System.out.println("");
@@ -567,9 +573,9 @@ public class PrimeFactorization {
             }
         
             
-            if (choice == 6)
+            if (choice == 5)
             {
-                System.out.println("");
+                System.out.println("Thank you");
             }
     }
            

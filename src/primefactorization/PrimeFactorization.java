@@ -81,9 +81,6 @@ public class PrimeFactorization {
             int incorrect;
             int current;
             
-            int a = 0;
-            int b = 0;
-            int c = 0;
             
             
             current = num3;
@@ -97,7 +94,7 @@ public class PrimeFactorization {
                 System.out.println("");
                 System.out.println("Correct");
                     
-                score = c + 1;
+                score = num3 + 1;
                 System.out.println("Your score right now: "+score+"");
                 System.out.println("");
                 System.out.println("");
@@ -116,7 +113,7 @@ public class PrimeFactorization {
                 System.out.println("");
                 System.out.println("Incorrect");
                     
-                score = c - 1;
+                score = num3 - 1;
                 System.out.println("Your score right now: "+score+"");
                 System.out.println("");
                 System.out.println("");
